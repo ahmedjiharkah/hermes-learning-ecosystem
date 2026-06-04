@@ -1,3 +1,0 @@
-[build]
-  command = "echo skipping build"
-  publish = "public"
