@@ -1,0 +1,2 @@
+[build]n  command = 'hugo'n  publish = 'public'
+
