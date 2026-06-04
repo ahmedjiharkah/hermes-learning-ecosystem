@@ -1,0 +1,3 @@
+[build]
+  command = "echo 'Bypassing Hugo Build'"
+  publish = "."
