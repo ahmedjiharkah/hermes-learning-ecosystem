@@ -3,109 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HERMES OS V1.0 | IQBAL AI</title>
+    <title>IQBAL AI | ARCHITECTING THE FUTURE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root {
-            --bg: #0A0A0A;
-            --text: #F0F0F0;
-            --accent: #00FF41;
-            --dim: #555;
-        }
-        body {
-            background-color: var(--bg);
-            color: var(--text);
-            font-family: 'JetBrains Mono', 'Fira Code', monospace;
-            line-height: 1.6;
-            margin: 0;
-            padding: 40px;
-            max-width: 900px;
-        }
-        h1, h2, h3 { color: var(--text); text-transform: uppercase; letter-spacing: 2px; }
-        h1 { border-bottom: 2px solid var(--accent); padding-bottom: 10px; font-size: 2rem; }
-        .status { color: var(--accent); font-size: 0.9rem; margin-bottom: 40px; }
-        .section { margin-bottom: 60px; border-left: 1px solid var(--dim); padding-left: 20px; }
-        .module-card { border: 1px solid var(--dim); padding: 20px; margin-bottom: 20px; transition: border-color 0.3s; }
-        .module-card:hover { border-color: var(--accent); }
-        .module-title { color: var(--accent); font-weight: bold; text-decoration: none; display: block; margin-bottom: 10px; }
-        a { color: var(--accent); text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        hr { border: 0; border-top: 1px solid var(--dim); margin: 40px 0; }
-        .footer { font-size: 0.8rem; color: var(--dim); margin-top: 100px; }
-        .asset-list { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; list-style: none; padding: 0; }
-        .asset-item { border: 1px hide; }
-        .asset-item::before { content: "> "; color: var(--accent); }
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+        body { font-family: "Inter", sans-serif; background: #050505; color: #fff; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+        .gradient-text { background: linear-gradient(90deg, #00FF41, #00D1FF); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
     </style>
 </head>
-<body>
+<body class="p-6 md:p-20">
 
-    <h1>HERMES LEARNING ECOSYSTEM</h1>
-    <div class="status">
-        [SYSTEM STATUS: ONLINE] [MODE: AUTONOMOUS EVOLUTION] [VERSION: 1.0]
-    </div>
+    <!-- Navbar -->
+    <nav class="flex justify-between items-center mb-24">
+        <div class="text-2xl font-bold gradient-text">IQBAL.AI</div>
+        <div class="hidden md:flex space-x-8 text-sm opacity-60 uppercase tracking-widest">
+            <a href="#" class="hover:text-[#00FF41]">Sistem</a>
+            <a href="#" class="hover:text-[#00FF41]">Aset</a>
+            <a href="#" class="hover:text-[#00FF41]">Akademi</a>
+        </div>
+        <button class="border border-white/20 px-6 py-2 rounded-full text-sm hover:bg-white hover:text-black transition">Login</button>
+    </nav>
 
-    <div class="section">
-        <h2>Executive Summary</h2>
-        <p>Anda tidak sedang membaca website biasa. Ini adalah pusat komando digital milik <strong>Iqbal AI</strong>. Sebuah ekosistem yang dirancang untuk satu tujuan: <strong>Leverage</strong>. Kami mengubah input menjadi aset yang bisa diskalakan, diotomatisasi, dan menghasilkan dampak jangka panjang tanpa ketergantungan pada kehadiran fisik.</p>
-    </div>
+    <!-- Hero Section -->
+    <header class="grid md:grid-cols-2 gap-16 items-center mb-32">
+        <div>
+            <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">ARCHITECT YOUR <span class="gradient-text">LEGACY.</span></h1>
+            <p class="text-xl opacity-60 mb-10 max-w-lg">Sistem otonom untuk membangun kekayaan, pengaruh, dan kebebasan di era AI. Tidak butuh followers, butuh sistem.</p>
+            <button class="bg-[#00FF41] text-black px-10 py-5 rounded-full font-bold text-lg hover:scale-105 transition shadow-[0_0_20px_rgba(0,255,65,0.3)]">MULAI EKSPLORASI</button>
+        </div>
+        <div class="glass p-10 rounded-3xl border border-[#00FF41]/20">
+            <h3 class="text-xl font-bold mb-8">CORE DASHBOARD</h3>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="p-6 bg-black/50 rounded-2xl border border-white/5">
+                    <div class="text-4xl font-bold gradient-text">100x</div>
+                    <div class="text-xs opacity-50 mt-2">LEVERAGE FACTOR</div>
+                </div>
+                <div class="p-6 bg-black/50 rounded-2xl border border-white/5">
+                    <div class="text-4xl font-bold gradient-text">7</div>
+                    <div class="text-xs opacity-50 mt-2">CORE ASSETS</div>
+                </div>
+                <div class="p-6 bg-black/50 rounded-2xl border border-white/5">
+                    <div class="text-4xl font-bold gradient-text">24/7</div>
+                    <div class="text-xs opacity-50 mt-2">SYSTEM UPTIME</div>
+                </div>
+                <div class="p-6 bg-black/50 rounded-2xl border border-white/5">
+                    <div class="text-4xl font-bold gradient-text">∞</div>
+                    <div class="text-xs opacity-50 mt-2">SCALE POTENTIAL</div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-    <div class="section">
-        <h2>7 Core Assets</h2>
-        <ul class="asset-list">
-            <li class="asset-item">WEALTH: Automated Income Engines</li>
-            <li class="asset-item">KNOWLEDGE: Evolving Intellectual Capital</li>
-            <li class="asset-item">INFLUENCE: Institutional Authority</li>
-            <li class="asset-item">NETWORK: Creator Intelligence Network</li>
-            <li class="asset-item">FREEDOM: System-Driven Autonomy</li>
-            <li class="asset-item">LEVERAGE: 100x Human Output via AI</li>
-            <li class="asset-item">LEGACY: Meaningful 30-Year Impact</li>
-        </ul>
-    </div>
+    <!-- Learning Modules -->
+    <section>
+        <h2 class="text-4xl font-bold mb-16 gradient-text">LEARNING PATHWAYS</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="glass p-8 rounded-3xl hover:border-[#00FF41] transition group">
+                <div class="text-[#00D1FF] mb-4 text-xs font-bold tracking-widest">MODUL 01</div>
+                <h3 class="text-2xl font-bold mb-4">Arsitek Warisan</h3>
+                <p class="text-sm opacity-60 leading-relaxed">Berhenti menjadi operator, mulailah membangun sistem yang berjalan tanpa Anda.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl hover:border-[#00FF41] transition group">
+                <div class="text-[#00D1FF] mb-4 text-xs font-bold tracking-widest">MODUL 02</div>
+                <h3 class="text-2xl font-bold mb-4">Protokol Berpikir</h3>
+                <p class="text-sm opacity-60 leading-relaxed">Clarity -> Decision -> System -> Automation -> Scale. Pola pikir sistemik.</p>
+            </div>
+            <div class="glass p-8 rounded-3xl hover:border-[#00FF41] transition group">
+                <div class="text-[#00D1FF] mb-4 text-xs font-bold tracking-widest">MODUL 03</div>
+                <h3 class="text-2xl font-bold mb-4">Otomatisasi</h3>
+                <p class="text-sm opacity-60 leading-relaxed">Merancang workflow 'self-repairing' menggunakan API dan AI Orchestration.</p>
+            </div>
+        </div>
+    </section>
 
-    <hr>
-
-    <h2>Learning Modules (Beginner to Expert)</h2>
-
-    <div class="module-card">
-        <span class="module-title">MODUL 1: MENJADI ARSITEK WARISAN</span>
-        <p>Berhenti menjadi operator, mulailah membangun sistem. Modul ini mengajarkan cara melihat bisnis sebagai "Warisan" yang harus bisa berjalan tanpa Anda.</p>
-    </div>
-
-    <div class="module-card">
-        <span class="module-title">MODUL 2: PROTOKOL BERPIKIR UNIVERSAL</span>
-        <p>Clarity -> Decision -> System -> Automation -> Scale. Pelajari 7 layer pemikiran yang digunakan Hermes OS untuk memecah masalah apa pun.</p>
-    </div>
-
-    <div class="module-card">
-        <span class="module-title">MODUL 3: SISTEM & OTOMATISASI</span>
-        <p>Cara merancang workflow yang tidak hanya efisien tapi juga 'self-repairing'. Menggunakan n8n, API, dan AI Orchestration.</p>
-    </div>
-
-    <div class="module-card">
-        <span class="module-title">MODUL 4: EKSEKUSI & ORKESTRASI CERDAS</span>
-        <p>Memimpin pasukan AI (Swarm Agents). Bagaimana mengarahkan berbagai model AI (Claude, GPT, Midjourney) untuk bekerja sebagai satu tim.</p>
-    </div>
-
-    <div class="module-card">
-        <span class="module-title">MODUL 5: ORGANISASI EVOLUSIONER</span>
-        <p>Membangun 'World Model' yang bersaing. Belajar bagaimana organisasi bisa tetap relevan dengan terus memperbarui keyakinannya secara otonom.</p>
-    </div>
-
-    <div class="module-card">
-        <span class="module-title">MODUL 6: MAKNA & WARISAN</span>
-        <p>Menjawab pertanyaan terlarang: "Mengapa semua ini layak dilakukan?". Menemukan jangkar makna di tengah kecepatan teknologi.</p>
-    </div>
-
-    <hr>
-
-    <div class="section">
-        <h2>Next Steps</h2>
-        <p>Sistem ini baru saja dimulai. Untuk integrasi lebih lanjut ke Akademi Digital Nganjuk, hubungi pusat saraf melalui terminal.</p>
-        <a href="https://github.com/ahmedjiharkah/hermes-learning-ecosystem">> View Source Code on GitHub</a>
-    </div>
-
-    <div class="footer">
-        © 2026 HERMES OS V1.0 | IQBAL AI STRATEGIC INTELLIGENCE.
-    </div>
+    <!-- Footer -->
+    <footer class="mt-32 pt-10 border-t border-white/10 text-center text-sm opacity-40">
+        © 2026 IQBAL AI STRATEGIC INTELLIGENCE. ALL SYSTEMS OPERATIONAL.
+    </footer>
 
 </body>
 </html>
