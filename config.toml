@@ -1,2 +1,4 @@
-baseURL = '/'nlanguageCode = 'en-us'ntitle = 'Hermes Learning Ecosystem'
-theme = ''
+﻿baseURL = "/"
+    languageCode = "en-us"
+    title = "Hermes Learning Ecosystem"
+    theme = ""
